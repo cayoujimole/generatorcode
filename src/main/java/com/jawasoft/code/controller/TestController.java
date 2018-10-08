@@ -17,6 +17,18 @@ public class TestController {
     @Autowired
     RoleService roleService;
 
+    @RequestMapping("/login")
+    public String login(Map<String, Object> map){
+        map.put("m","ssssss");
+        return "login";
+    }
+
+    @RequestMapping("/home")
+    public String home(Map<String, Object> map){
+        map.put("m","ssssss");
+        return "home";
+    }
+
     @ResponseBody
     @RequestMapping("/getRole/{pid}")
     public Role getRole(@PathVariable("pid") Integer pid){

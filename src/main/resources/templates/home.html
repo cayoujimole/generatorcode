@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<#include "/_public.html">
+
+
+<body>
+<section class="Hui-article-box">
+    <div class="panel panel-default mt-20" title="新公告(当前用户未读)总数，系统所有用户可见">
+        <div class="panel-header">系统公告</div>
+        <div class="panel-body">
+            <a href="#" >当前未读 1 条</a>
+        </div>
+    </div>
+
+    <div class="panel panel-default mt-20" title="如果是质保，显示待审核总数
+            如果是供应商，显示未处理的准入通知总数及审核驳回总数
+            驳回超过系统中设置的时间未处理的，在首页给出的预警信息
+            其他用户角色不显示该项">
+        <div class="panel-header">准入通知</div>
+        <div class="panel-body">
+            <span class="label label-secondary radius">
+                <a href="#">
+                    待审核 0 条
+                </a>
+            </span>
+            <span class="label label-secondary radius">
+                <a href="#">
+                    未处理 0 条
+                </a>
+            </span>
+            <span class="badge badge-danger radius">
+                <a href="#">
+                    驳回 0 条
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <div class="panel panel-default mt-20" title="根据系统管理员设置的供应商资质预警时间，可以展示在预警时间范围内的供应商。该提醒可见角色为系统管理员、质保、被预警的供应商">
+        <div class="panel-header">供应商资质到期预警</div>
+        <div class="panel-body">
+            <span class="label label-warning radius">
+                <a href="#" >
+                    供应商 0 个
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <div class="panel panel-default mt-20" title="质保：显示子备货单待审核总数">
+        <div class="panel-header">储备单</div>
+        <div class="panel-body">
+            <span class="label label-secondary radius">
+                <a href="#" >
+                    待审核 0 条
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <div class="panel panel-default mt-20" title="采购：显示待确认入库总数及待拒收总数
+        质保：显示待审核总数，发货审核、到货审核
+        供应商：显示待发货总数">
+        <div class="panel-header">供货通知单</div>
+        <div class="panel-body">
+            <span class="label label-secondary radius">
+                <a href="#">
+                    待入库 0 条
+                </a>
+            </span>
+            <span class="label label-secondary radius">
+                <a href="#">
+                    待审核 0 条
+                </a>
+            </span>
+            <span class="label label-primary radius">
+                <a href="#">
+                    发货审核 0 条
+                </a>
+            </span>
+            <span class="label label-primary radius">
+                <a href="#">
+                    到货审核 0 条
+                </a>
+            </span>
+            <span class="label label-secondary radius">
+                <a href="#">
+                    待发货 0 条
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <div class="panel panel-default mt-20" title="质保：显示待审核的反馈函总数 供应商：显示未上传整改信息的总数">
+        <div class="panel-header">舆情反馈</div>
+        <div class="panel-body">
+            <span class="label label-secondary radius">
+                <a href="#">
+                    反馈函 0 条
+                </a>
+            </span>
+            <span class="badge badge-danger radius">
+                <a href="#">
+                    未处理整改 0 条
+                </a>
+            </span>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
