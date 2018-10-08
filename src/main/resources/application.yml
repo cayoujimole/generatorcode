@@ -9,10 +9,10 @@ logging:
 mybatis.mapper-locations: classpath*:mapper/*.xml
 
 spring:
-#  mvc:
-#    static-path-pattern: /static/**
-#  resources:
-#    static-locations: classpath:/META-INF/resources/,classpath:/resources/, classpath:/static/, classpath:/public/
+  mvc:
+    static-path-pattern: /*/**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/, classpath:/static/, classpath:/public/, classpath:/templates/
   http:
     encoding:
       force: true
@@ -56,6 +56,7 @@ spring:
     content-type: text/html
     enabled: true
     cache: false #缓存配置
+    spring.freemarker.settings.template_update_delay: 0
     template-loader-path: classpath:/templates/ #模板加载路径
     charset: UTF-8 #编码格式
     settings:
