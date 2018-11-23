@@ -58,6 +58,9 @@ public class MapperHandler extends BaseHandler<MapperInfo> {
             String columnName = entry.getValue();
 
             String isId = "result";
+            if(propName==null || pkName==null){
+                System.out.println("111");
+            }
             if (pkName.toLowerCase().equals(propName.toLowerCase())) {
                 this.param.put("pkColumn", columnName);
                 isId = "id";

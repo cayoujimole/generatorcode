@@ -22,7 +22,7 @@ public class Constants {
      */
     public static String ENTITY_SUFFIX = "Entity";
 
-    public static String DAO_SUFFIX = "Dao";
+    public static String DAO_SUFFIX = "Mapper";
 
     public static String MAPPER_XML_SUFFIX = "Mapper";
 

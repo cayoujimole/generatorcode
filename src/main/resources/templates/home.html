@@ -5,6 +5,12 @@
 
 <body>
 <section class="Hui-article-box">
+    <!--<div id="tab_demo" class="HuiTab">-->
+        <!--<div class="tabBar clearfix"><span>选项卡一</span><span>选项卡二</span><span>自适应宽度</span></div>-->
+        <!--<div class="tabCon">内容一</div>-->
+        <!--<div class="tabCon">内容二</div>-->
+        <!--<div class="tabCon">内容三</div>-->
+    <!--</div>-->
     <div class="panel panel-default mt-20" title="新公告(当前用户未读)总数，系统所有用户可见">
         <div class="panel-header">系统公告</div>
         <div class="panel-body">
@@ -23,16 +29,16 @@
                     待审核 0 条
                 </a>
             </span>
-            <span class="label label-secondary radius">
-                <a href="#">
-                    未处理 0 条
-                </a>
-            </span>
-            <span class="badge badge-danger radius">
-                <a href="#">
-                    驳回 0 条
-                </a>
-            </span>
+            <!--<span class="label label-secondary radius">-->
+                <!--<a href="#">-->
+                    <!--未处理 0 条-->
+                <!--</a>-->
+            <!--</span>-->
+            <!--<span class="badge badge-danger radius">-->
+                <!--<a href="#">-->
+                    <!--驳回 0 条-->
+                <!--</a>-->
+            <!--</span>-->
         </div>
     </div>
 
@@ -40,9 +46,7 @@
         <div class="panel-header">供应商资质到期预警</div>
         <div class="panel-body">
             <span class="label label-warning radius">
-                <a href="#" >
-                    供应商 0 个
-                </a>
+                供应商到期 0 个
             </span>
         </div>
     </div>
@@ -63,11 +67,11 @@
         供应商：显示待发货总数">
         <div class="panel-header">供货通知单</div>
         <div class="panel-body">
-            <span class="label label-secondary radius">
-                <a href="#">
-                    待入库 0 条
-                </a>
-            </span>
+            <!--<span class="label label-secondary radius">-->
+                <!--<a href="#">-->
+                    <!--待入库 0 条-->
+                <!--</a>-->
+            <!--</span>-->
             <span class="label label-secondary radius">
                 <a href="#">
                     待审核 0 条
@@ -83,11 +87,11 @@
                     到货审核 0 条
                 </a>
             </span>
-            <span class="label label-secondary radius">
-                <a href="#">
-                    待发货 0 条
-                </a>
-            </span>
+            <!--<span class="label label-secondary radius">-->
+                <!--<a href="#">-->
+                    <!--待发货 0 条-->
+                <!--</a>-->
+            <!--</span>-->
         </div>
     </div>
 
@@ -96,18 +100,32 @@
         <div class="panel-body">
             <span class="label label-secondary radius">
                 <a href="#">
-                    反馈函 0 条
+                    待审核 0 条
                 </a>
             </span>
-            <span class="badge badge-danger radius">
-                <a href="#">
-                    未处理整改 0 条
-                </a>
-            </span>
+            <!--<span class="badge badge-danger radius">-->
+                <!--<a href="#">-->
+                    <!--未处理整改 0 条-->
+                <!--</a>-->
+            <!--</span>-->
         </div>
     </div>
 
 </section>
+
+<script>
+
+    $(function(){ $('#tab_demo').Huitab(); $('#tab_demo2').Huitab({ tabEvent:mousemove, index:0 }); });
+
+    // $(function(){
+    //     $.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","1")});
+    // #tab_demo 父级id
+    // #tab_demo .tabBar span 控制条
+    // #tab_demo .tabCon 内容区
+    // click 事件 点击切换，可以换成mousemove 移动鼠标切换
+    // 1	默认第2个tab为当前状态（从0开始）
+
+</script>
 
 </body>
 </html>

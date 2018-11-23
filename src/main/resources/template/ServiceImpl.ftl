@@ -31,7 +31,7 @@ public class ${entityName}ServiceImpl implements ${entityName}Service {
     private Logger logger = LoggerFactory.getLogger(${entityName}ServiceImpl.class);
 
     @Resource
-    private ${entityName}Dao ${lowerEntityName}Dao;
+    private ${entityName}Mapper ${lowerEntityName}Dao;
 
     @Override
     public void add${entityName}(${entityName} ${lowerEntityName}){

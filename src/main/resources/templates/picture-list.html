@@ -72,7 +72,7 @@
 
 <!--_menu 作为公共模版分离出去-->
 <aside class="Hui-aside">
-	
+
 	<div class="menu_dropdown bk_2">
 		<dl id="menu-article">
 			<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
@@ -175,7 +175,35 @@
 				<input type="text" name="" id="" placeholder=" 图片名称" style="width:250px" class="input-text">
 				<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜图片</button>
 			</div>
-			<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="picture_add('添加图片','picture-add.html')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加图片</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+			<div class="cl pd-5 bg-1 bk-gray mt-20">
+                <span class="l">
+                    <a href="javascript:;" onclick="datadel()" class="btn btn-warning radius">
+                        <i class="Hui-iconfont">&#xe60e;</i> 冻结品种
+                    </a>
+                    <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius">
+                        <i class="Hui-iconfont">&#xe6e2;</i> 删除无关舆情
+                    </a>
+                    <a class="btn btn-success radius" onclick="picture_add('添加图片','picture-add.html')" href="javascript:;">
+                        <i class="Hui-iconfont">&#xe6f7;</i> 恢复供品种
+                    </a>
+                    <a class="btn btn-primary radius" onclick="picture_add('添加图片','picture-add.html')" href="javascript:;">
+                        <i class="Hui-iconfont">&#xe60c;</i> 修改评价周期
+                    </a>
+					<a class="btn btn-danger radius" onclick="picture_add('添加图片','picture-add.html')" href="javascript:;">
+                        <i class="Hui-iconfont">&#xe603;</i> 发送预警邮件
+                    </a>
+					<a class="btn btn-primary radius" onclick="picture_add('添加图片','picture-add.html')" href="javascript:;">
+                        <i class="Hui-iconfont">&#xe645;</i> 导入
+                    </a>
+					<a class="btn btn-primary radius" onclick="picture_add('添加图片','picture-add.html')" href="javascript:;">
+                        <i class="Hui-iconfont">&#xe615;</i> 保存供应商评级
+                    </a>
+					<a class="btn btn-primary radius" data-title="添加资讯" _href="article-add.html" onclick="article_add('添加资讯','article-add.html')" href="javascript:;">
+						<i class="Hui-iconfont">&#xe600;</i> 添加品种
+					</a>
+
+                </span>
+                <span class="r">共有数据：<strong>54</strong> 条</span> </div>
 			<div class="mt-20">
 				<table class="table table-border table-bordered table-bg table-hover table-sort">
 					<thead>
@@ -211,7 +239,7 @@
 </section>
 
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.page.js"></script>
@@ -251,7 +279,7 @@ function picture_show(title,url,id){
 /*图片-审核*/
 function picture_shenhe(obj,id){
 	layer.confirm('审核文章？', {
-		btn: ['通过','不通过'], 
+		btn: ['通过','不通过'],
 		shade: false
 	},
 	function(){
@@ -265,7 +293,7 @@ function picture_shenhe(obj,id){
 		$(obj).parents("tr").find(".td-status").html('<span class="label label-danger radius">未通过</span>');
 		$(obj).remove();
     	layer.msg('未通过', {icon:5,time:1000});
-	});	
+	});
 }
 /*图片-下架*/
 function picture_stop(obj,id){
@@ -273,7 +301,7 @@ function picture_stop(obj,id){
 		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="picture_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
 		$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已下架</span>');
 		$(obj).remove();
-		layer.msg('已下架!',{icon: 5,time:1000});
+		layer.msg('已下架!',{icon: 5,time:10000000});
 	});
 }
 

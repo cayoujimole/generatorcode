@@ -24,3 +24,10 @@
 /*危险面板*/
 .panel-danger{border-color:#dd514c}
 .panel-danger > .panel-header{ border-color:#dd514c; background-color:#dd514c; color:#fff}
+
+/*选项卡*/
+.clearfix:after{content:"\20";display:block;height:0;clear:both;visibility:hidden}.clearfix{zoom:1}
+.tabBar {border-bottom: 2px solid #222}
+.tabBar span {background-color: #e8e8e8;cursor: pointer;display: inline-block;float: left;font-weight: bold;height: 30px;line-height: 30px;padding: 0 15px}
+.tabBar span.current{background-color: #5a98de;color: #fff}
+.tabCon {display: none}
