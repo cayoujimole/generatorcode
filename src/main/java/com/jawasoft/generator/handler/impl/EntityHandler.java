@@ -52,7 +52,7 @@ public class EntityHandler extends BaseHandler<EntityInfo> {
                 .append("    @Column(name = \"")
                 .append(Column)
                 .append("\")")
-                .append(";\r\n")
+                .append("\r\n")
                 .append("    private ")
                 .append(propType)
                 .append(" ")
