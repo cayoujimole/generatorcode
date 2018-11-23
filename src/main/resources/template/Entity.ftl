@@ -19,7 +19,7 @@ import java.util.Date;
  */
 @Data
 @Table(name = "${tableName}")
-public class ${className} implements Serializable {
+public class ${className} extends BaseEntity {
     private static final long serialVersionUID = ${serialVersionNum};
     
 ${propertiesStr}
