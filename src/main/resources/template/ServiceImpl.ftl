@@ -25,8 +25,8 @@ import org.springframework.stereotype.Service;
  * </pre>
  * @since 1.
  */
-@Service("${lowerEntityName}Service")
-public class ${entityName}ServiceImpl implements ${entityName}Service {
+@Service
+public class ${entityName}Service {
 
     private Logger logger = LoggerFactory.getLogger(${entityName}ServiceImpl.class);
 
